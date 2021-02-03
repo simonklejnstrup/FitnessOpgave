@@ -2,6 +2,7 @@ package demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -20,14 +21,9 @@ public class Main {
         Member marcel = new Member("Marcel", "123456-1234", true);
 
         ArrayList<Person> people = new ArrayList<>();
-        people.add(claus);
-        people.add(anna);
-        people.add(tove);
-        people.add(henning);
-        people.add(morten);
-        people.add(martin);
-        people.add(martina);
-        people.add(marcel);
+
+        Collections.addAll(people, claus, anna, tove, henning, morten, martin, martina, marcel);
+
 
         System.out.println("FITNESS EMPLOYEES\n");
         System.out.println("Name         Cpr        Hours         Salary       Vacation");
