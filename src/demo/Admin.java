@@ -17,4 +17,9 @@ public class Admin extends Employee {
     public void setVacation(int vacation) {
         this.vacation = vacation;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%-13s%-15s%-16s%-13s%s", name, cpr, hours, salary, vacation);
+    }
 }

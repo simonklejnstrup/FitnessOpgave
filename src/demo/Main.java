@@ -26,7 +26,7 @@ public class Main {
 
 
         System.out.println("FITNESS EMPLOYEES\n");
-        System.out.println("Name         Cpr        Hours         Salary       Vacation");
+        System.out.println("Name         Cpr          Hours         Salary       Vacation");
         System.out.println("******************************************************************");
         for (Person p: people) {
             if (p instanceof Employee){
@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Name         Cpr");
         System.out.println("******************************************************************");
         for (Person p : people) {
-            System.out.printf("%s        %s\n", p.getName(), p.getCpr() );
+            System.out.printf("%-13s%s\n", p.getName(), p.getCpr() );
         }
 
 

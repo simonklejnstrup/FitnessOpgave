@@ -16,4 +16,9 @@ public class Instructor extends Employee {
     public int getSalary(){
         return this.hours * hourSalary;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%-13s%-15s%-16s%-13s%s", name, cpr, hours, getSalary(), vacation);
+    }
 }

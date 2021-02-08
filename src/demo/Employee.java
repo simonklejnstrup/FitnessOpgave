@@ -42,8 +42,5 @@ public class Employee extends Person {
         this.hours = hours;
     }
 
-    @Override
-    public String toString() {
-        return name + "      " + cpr + "      " +  hours + "         " +  salary + "            " +  vacation;
-    }
+
 }

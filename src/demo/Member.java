@@ -31,6 +31,6 @@ public class Member extends Person{
 
     @Override
     public String toString() {
-        return name + "      " + cpr + "      " +  getMemberType() + "           " +  getMonthlyFee();
+        return String.format("%-13s%-15s%-16s%s", name, cpr, getMemberType(), getMonthlyFee());
     }
 }
